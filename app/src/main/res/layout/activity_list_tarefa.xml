@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.tarefa.ListTarefaActivity"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:text="Disciplina"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.15"
+                    android:layout_height="wrap_content"
+                    android:text="Data"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listTarefas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+
+                <TextView
+                    android:id="@+id/tvEmptyList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:text="Clique no '+' para adicionar tarefas."/>
+
+                <ImageButton
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="fitXY"
+                    android:background="#80FFFFFF"
+                    android:onClick="adicionar"
+                    android:src="@mipmap/ic_add_round" />
+            </FrameLayout>
+        </LinearLayout>
+</LinearLayout>

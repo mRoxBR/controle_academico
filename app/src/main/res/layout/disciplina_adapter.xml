@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/nome"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="1.25"
+        android:layout_height="wrap_content"
+        android:text="Nota"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/nota"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Faltas"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/faltas"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:text="Semestre"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/semestre"/>
+</LinearLayout>

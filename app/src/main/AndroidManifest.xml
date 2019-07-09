@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufop.controle_academico">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Controle Acadêmico"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <activity
+            android:name=".main.grafico.MainGraficoActivity"
+            android:label="Gráficos" />
+        <activity
+            android:name=".main.tarefa.ListTarefaByDisciplinaActivity"
+            android:label="Lista de Tarefas" />
+        <activity
+            android:name=".main.tarefa.EditTarefaByDisciplinaActivity"
+            android:label="Edição de Tarefas"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".main.tarefa.ListTarefaActivity"
+            android:label="Lista de Tarefas" />
+        <activity
+            android:name=".main.tarefa.EditTarefaActivity"
+            android:label="Edição de Tarefas"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".main.tarefa.AddTarefaActivity"
+            android:label="Adição de Tarefas"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".main.disciplina.ListDisciplinaActivity"
+            android:label="Lista de Disciplinas" />
+        <activity
+            android:name=".main.disciplina.EditDisciplinaActivity"
+            android:label="Edição de Disciplinas"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".main.disciplina.AddDisciplinaActivity"
+            android:label="Adição de Disciplinas"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".main.MainActivity"></activity>
+        <activity android:name=".main.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".main.NotificationPublisher" />
+    </application>
+
+</manifest>
