@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.ufop.controle_academico">
+    package="br.ufop.ControleAcademico">
 
     <application
         android:allowBackup="true"
@@ -10,39 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
         <activity
-            android:name=".main.grafico.MainGraficoActivity"
+            android:name="br.ufop.ControleAcademico.main.grafico.MainGraficoActivity"
             android:label="Gráficos" />
         <activity
-            android:name=".main.tarefa.ListTarefaByDisciplinaActivity"
+            android:name="br.ufop.ControleAcademico.main.tarefa.ListTarefaByDisciplinaActivity"
             android:label="Lista de Tarefas" />
         <activity
-            android:name=".main.tarefa.EditTarefaByDisciplinaActivity"
+            android:name="br.ufop.ControleAcademico.main.tarefa.EditTarefaByDisciplinaActivity"
             android:label="Edição de Tarefas"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.tarefa.ListTarefaActivity"
+            android:name="br.ufop.ControleAcademico.main.tarefa.ListTarefaActivity"
             android:label="Lista de Tarefas" />
         <activity
-            android:name=".main.tarefa.EditTarefaActivity"
+            android:name="br.ufop.ControleAcademico.main.tarefa.EditTarefaActivity"
             android:label="Edição de Tarefas"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.tarefa.AddTarefaActivity"
+            android:name="br.ufop.ControleAcademico.main.tarefa.AddTarefaActivity"
             android:label="Adição de Tarefas"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.disciplina.ListDisciplinaActivity"
+            android:name="br.ufop.ControleAcademico.main.disciplina.ListDisciplinaActivity"
             android:label="Lista de Disciplinas" />
         <activity
-            android:name=".main.disciplina.EditDisciplinaActivity"
+            android:name="br.ufop.ControleAcademico.main.disciplina.EditDisciplinaActivity"
             android:label="Edição de Disciplinas"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".main.disciplina.AddDisciplinaActivity"
+            android:name="br.ufop.ControleAcademico.main.disciplina.AddDisciplinaActivity"
             android:label="Adição de Disciplinas"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".main.MainActivity"></activity>
-        <activity android:name=".main.LoginActivity">
+        <activity android:name="br.ufop.ControleAcademico.main.MainActivity"></activity>
+        <activity android:name="br.ufop.ControleAcademico.main.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -50,7 +50,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".main.NotificationPublisher" />
+        <receiver android:name="br.ufop.ControleAcademico.main.NotificationPublisher" />
     </application>
 
 </manifest>
